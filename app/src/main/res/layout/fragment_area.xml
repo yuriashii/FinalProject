@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.area.AreaFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="150dp"
+                    android:src="@drawable/persegi"
+
+                    android:layout_height="150dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/panjang"
+                            android:hint="Panjang"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="x"></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:hint="Lebar"
+                            android:id="@+id/lebar"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/hasil_persegi"
+                        android:text="Hasil : 0"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Button
+                        android:id="@+id/hitung_persegi"
+                        android:text="Hitung Luas Persegi"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/segitiga"
+                    android:layout_width="150dp"
+                    android:src="@drawable/segitiga"
+
+                    android:layout_height="150dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/alas"
+                            android:hint="Alas"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="x"></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/tinggi"
+                            android:hint="Tinggi"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="/2"></TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/hasil_segitiga"
+                        android:text="Hasil : 0"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Button
+                        android:id="@+id/hitung_segitiga"
+                        android:text="Hitung Luas Segitiga"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+
+                android:paddingBottom="150dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/lingkaran"
+                    android:layout_width="150dp"
+                    android:src="@drawable/lingkaran"
+                    android:layout_height="150dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/ruas"
+                            android:hint="Ruas Lingkaran"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                       
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/hasil_lingkaran"
+                        android:text="Hasil : 0"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Button
+                        android:id="@+id/hitung_lingkaran"
+                        android:text="Hitung Luas Lingkarang"
+                        android:textSize="11dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

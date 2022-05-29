@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325516905378",
+    "firebase_url": "https://bimbel-meiyin-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bimbel-meiyin",
+    "storage_bucket": "bimbel-meiyin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325516905378:android:3c9c1c6eac658d8a5280fb",
+        "android_client_info": {
+          "package_name": "com.meiying.bimbel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325516905378-aitf6r20af2u9kfrpjab57mfhnra3e6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhLEDN_asabMVbdvOX0nAB09loQUqt1M4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325516905378-aitf6r20af2u9kfrpjab57mfhnra3e6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

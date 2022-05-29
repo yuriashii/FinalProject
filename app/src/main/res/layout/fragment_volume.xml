@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.area.AreaFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="150dp"
+                    android:src="@drawable/balok"
+                    android:scaleType="fitCenter"
+                    android:layout_height="150dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="p="></TextView>
+                        <EditText
+                            android:id="@+id/panjang_balok"
+                            android:inputType="numberDecimal"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="l="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/lebar_balok"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="20dp"
+                        android:text="t="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/tinggi_balok"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/hasil_balok"
+                        android:text="Hasil : 0"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Button
+                        android:id="@+id/hitung_balok"
+                        android:text="Hitung Volume Balok"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/segitiga"
+                    android:layout_width="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/piramid"
+
+                    android:layout_height="150dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="p="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/panjang_piramid"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="l="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/lebar_piramid"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="t="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/tinggi_piramid"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/hasil_piramid"
+                        android:text="Hasil : 0"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Button
+                        android:id="@+id/hitung_piramid"
+                        android:text="Hitung Volume Piramid"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingBottom="100dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/lingkaran"
+                    android:layout_width="150dp"
+                    android:src="@drawable/tabung"
+                    android:scaleType="fitCenter"
+                    android:layout_height="150dp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="r="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/ruas"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="20dp"
+                            android:text="t="></TextView>
+                        <EditText
+                            android:inputType="numberDecimal"
+                            android:id="@+id/tinggi_tabung"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </EditText>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/hasil_tabung"
+                        android:text="Hasil : 0"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <Button
+                        android:id="@+id/hitung_tabung"
+                        android:text="Hitung Volume Tabung"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
